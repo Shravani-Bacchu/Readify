@@ -1,5 +1,7 @@
 ---
 import "..//styles/global.css";
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
 const pageTitle = "About Me!";
 const identity = {
   firstName: "Shravani",
@@ -7,7 +9,7 @@ const identity = {
   hobbies: ["coding", "reading", "badminton"],
 };
 const skills = ["HTML", "CSS","Astro","Python","Astro"];
-const projects = ["Behind The Marquee","MiniMix",""]
+const projects = ["Behind The Marquee","MiniMix","Breach-Bot","Mastermind"]
 ---
 
 <html lang="en">
@@ -18,25 +20,9 @@ const projects = ["Behind The Marquee","MiniMix",""]
     <meta name="generator" content={Astro.generator} >
     <title>{pageTitle}</title>
   </head>
-<body class = "bg-[#5D2E46]">
-<ul class="list-none m-0 p-0 flex gap-6">
-    <li><a href="/">Home Page </a></li>
-    <li><a href="/reviews">Reviews</a></li>
-    <li><a href="/about">About</a></li>
-</ul>
-<h1>{pageTitle}</h1>
-<p>Welcome to Readify. A website where you can create reviews of books that you've read and find your next favourite book.</p>
-<p>Here are a few facts about me:</p>
-<ul>
-  <li>My name is {identity.firstName}.</li>
-  <li>I live in {identity.country}.</li>
-  {identity.hobbies.length >= 2 &&
-    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-  }
-</ul>
-<p>My skills are:</p>
-<ul>
-  {skills.map((skill) => <li>{skill}</li>)}
-</ul>
-</body>
+<body>
+  <script>
+    import "../scripts/menu.js";
+  </script>
+<Footer/>
 </html>
