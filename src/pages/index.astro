@@ -1,5 +1,7 @@
 ---
 import "..//styles/global.css";
+const pageTitle = "Home Page";
+
 ---
 
 <html lang="en">
@@ -8,7 +10,7 @@ import "..//styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Readify</title>
+    <title>{pageTitle}</title>
   </head>
 <body class = "bg-[#A08794]">
 <ul class="list-none m-0 p-0 flex gap-6">
@@ -16,6 +18,6 @@ import "..//styles/global.css";
   <li><a href="/reviews">Reviews</a></li>
   <li><a href="/about">About</a></li>
 </ul>
-<h1>Readify</h1>
+<h1>{pageTitle}</h1>
 </body>
 </html>
