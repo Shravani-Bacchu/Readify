@@ -1,9 +1,8 @@
-// @ts-check
 import { defineConfig } from "astro/config";
-import tailwindcss from "@tailwindcss/vite";
-// https://astro.build/config
+
+import preact from "@astrojs/preact";
+
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()],
-  },
+  site: "https://readify-amber.vercel.app/",
+  integrations: [preact()]
 });
