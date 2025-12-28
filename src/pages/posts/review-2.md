@@ -1,12 +1,13 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My Second Book Review'
 pubDate: 2025-12-21
 description: 'This is a review of Prodigy by Marie Lu'
-author: 'Shravani'
 image:
     url: 'https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1365405181i/16287469.jpg'
     alt: 'The Prodigy Book Cover.'
-tags: ["dystopian fiction", "YA lit", "5-star-reads"]
+tags: ["Dystopian Fiction ", "Romance ", " Young Adult"]
+rating: '5 Stars *****'
 ---
 
 Published on: 2025-12-21
