@@ -1,8 +1,12 @@
-import { defineConfig } from "astro/config";
-
-import preact from "@astrojs/preact";
+import { defineConfig } from 'astro/config';
+import path from 'path';
 
 export default defineConfig({
-  site: "https://readify-amber.vercel.app/",
-  integrations: [preact()]
+  vite: {
+    resolve: {
+      alias: {
+        '~': path.resolve('./src'), // '~' now points to 'src/'
+      },
+    },
+  },
 });
